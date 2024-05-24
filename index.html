@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <title>Document</title>
+</head>
+<body >
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+      <div class='light x1'></div>
+      <div class='light x2'></div>
+      <div class='light x3'></div>
+      <div class='light x4'></div>
+      <div class='light x5'></div>
+      <div class='light x6'></div>
+      <div class='light x7'></div>
+      <div class='light x8'></div>
+      <div class='light x9'></div>
+
+            <div class="absolute  top-[10%] rounded-full left-1/2 translate-x-[-50%] translate-y-[-50%] border search-pos p-2  flex  justify-between items-center">
+                <input type="text" class="p-2  text-xl rounded transtion bg-transparent outline-none text-white grow m-2 w-[80vw] md:w-[300px]" placeholder="Enter city name">
+                <span class="span cursor-pointer"><i class="fa-solid fa-magnifying-glass fa-xl mr-2" style="color: #ffffff;"></i></span>
+            </div>
+            <div class="p-2 result backdrop-blur-lg w-[350px] border text-white absolute  top-[50%] rounded-xl left-1/2 translate-x-[-50%] translate-y-[-50%]">
+                <div class="flex flex-col items-center main-place">
+                     <img src="" width="30%" class="img">
+                     <span class="text-5xl font-bold my-2 temp"></span>
+                     <span class="capitalize text-xl temp-text"></span>
+                </div>
+                <div class="select-none  w-full flex justify-between p-1 mt-10">
+                    <li class="list-none flex items-center">
+                        <i class="fa-sharp fa-solid fa-water fa-3x" style="color: #ffffff;"></i>
+                        <div class="list-none m-2">
+                            <span class="font-bold text-xl hum">89%</span> <br>
+                            <span class="capitalize hum">Humidity</span>
+                        </div>
+                     </li>
+
+                     <li class="list-none flex items-center">
+                        <i class="fa-sharp fa-solid fa-wind fa-3x" style="color: #ffffff;"></i>
+                        <div class="list-none m-2">
+                            <span class="font-bold text-xl speed">1KM/h</span> <br>
+                            <span class="des">wing speed</span>
+                        </div>
+                     </li>
+                </div>
+            </div>
+            <div class="p-2 error flex  flex-col items-center justify-center  backdrop-blur-lg w-[350px] border text-white absolute  top-[50%] rounded-xl left-1/2 translate-x-[-50%] translate-y-[-50%]">
+               <div>
+                      <i class="mt-6 fa-solid fa-cog fa-spin fa-3x" style="color: white;"></i>
+               </div>
+                <br> <span class="text-2xl">Oops.!.</span><br><span>please dose'nt country</span>
+            </div>
+     <script src="apps.js"></script>
+</body>
+</html>
