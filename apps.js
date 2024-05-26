@@ -18,7 +18,6 @@ $(".span").click(function(){
            fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.val()}&appid=${apiKey}`).then(res => res.json()).then(response => {
                 f = ((parseInt(response.main.temp) - 273.15) * 1.8) + 32 ;
                 c = Math.floor((f - 32) * (5/9));
-                c+=14;
                 temp_place.innerHTML = `${c} <sup><sup>o</sup>c</sup>`;
                 $(".temp-text").text(response.weather[0].main);
                 hum.innerHTML = `${response.main.humidity}%`;
